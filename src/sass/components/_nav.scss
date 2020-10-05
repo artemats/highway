@@ -1,0 +1,13 @@
+.nav{
+    ul{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    li{
+      padding-right: 50px;
+        &:last-child{
+          padding-right: 0;
+        }
+    }
+}

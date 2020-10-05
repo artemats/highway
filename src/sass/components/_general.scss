@@ -1,0 +1,45 @@
+body{
+  background-color: $white;
+  color: $black;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.container{
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.link{
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color .2s ease;
+    @include hover(991){
+      &:hover{
+        color: $orange;
+      }
+    }
+}
+
+.content{
+  padding: 100px 0;
+    &-box{
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    p{
+      margin-bottom: 20px;
+    }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
